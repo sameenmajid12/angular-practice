@@ -1,0 +1,36 @@
+.main-wrapper{
+  display: flex;
+  align-items: center;
+  padding: 1rem 4rem;
+  justify-content: space-between;
+  background-color:gainsboro;
+}
+.logo{
+  color: #333;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.right{
+  display: flex;
+  column-gap: 10px;
+}
+button{
+  width: 100px;
+  padding:0.5rem 0rem;
+  border-radius: 999px;
+  cursor: pointer;
+}
+.login{
+  background-color: blue;
+  color:white;
+  font-weight: 700;
+  border:none;
+}
+.signup{
+  border: 1px solid blue;
+  background-color: white;
+  color: blue;
+  font-weight: 500;
+}
+
+

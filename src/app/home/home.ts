@@ -9,4 +9,8 @@ import { Greeter } from '../components/greeter/greeter';
 })
 export class Home {
   greetingMessage = signal("Hello from home")
+  userMessage = signal("Type a message")
+  keyUpHandler=(event: KeyboardEvent)=>{
+    this.userMessage.set((event.target as HTMLInputElement).value)
+  }
 }

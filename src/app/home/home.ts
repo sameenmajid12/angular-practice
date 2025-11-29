@@ -1,9 +1,10 @@
 import { Component, signal } from '@angular/core';
 import { Greeter } from '../components/greeter/greeter';
+import { Counter } from '../counter/counter';
 
 @Component({
   selector: 'app-home',
-  imports: [Greeter],
+  imports: [Greeter, Counter],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })

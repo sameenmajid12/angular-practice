@@ -1,1 +1,3 @@
-<p>todo-item works!</p>
+<input id="todo-{{todo().id}}" type="checkbox" [checked]="todo().completed" (change)="this.toggleTodo()"/>
+<h4 appHighlightCompletedTodo [isCompleted]="todo().completed">Title: {{ todo().title }}</h4>
+<p appHighlightCompletedTodo [isCompleted]="todo().completed">ID: {{ todo().id }}</p>
